@@ -102,7 +102,6 @@ class Moments extends Component {
                             <Grid item xs={6} sm={6}>
                                 <FormControl className="textField">
                                     <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
-                                    {/* 
                                     <Input
                                         className="margin"
                                         type="file"
@@ -110,9 +109,8 @@ class Moments extends Component {
                                         label="Upload File"
                                         value={this.state.selectedFile}
                                         onChange={this.onFileChange}
-
-                                    /> */}
-                                    <input type="file" onChange={this.onFileChange} />
+                                    />
+                                    {/* <input type="file" onChange={this.onFileChange} /> */}
 
                                 </FormControl>
                             </Grid>
@@ -120,15 +118,8 @@ class Moments extends Component {
                             <Grid item xs={12} >
                                 <Grid container justify="center">
                                     <Button variant="contained" color="primary" onClick={this.onFileUpload}>
-                                        Sign Up
+                                        Submit
                             </Button>
-                                </Grid>
-                                <Grid container justify="center">
-                                    <Grid item>
-                                        <Link href="/" variant="body2">
-                                            Already a member? Sign in
-                                    </Link>
-                                    </Grid>
                                 </Grid>
                             </Grid>
 
